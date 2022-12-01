@@ -1,16 +1,16 @@
 import {
   BrowserRouter as Router,
   // Routes, //Switch
-  Route,
-  Navigate, //Link
+  // Route,
+  // Navigate, //Link
 } from "react-router-dom";
-import { Home } from "pages/home";
-import { Contact } from "pages/contact";
 import Routes from "routes";
+import Nav from "components/nav"
 
 function App() {
   return (
     <div className="App">
+      <Nav/>
       <Router>
         <Routes />
       </Router>
